@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>may tinh 2</title>
+</head>
+<body>
+        <form>
+            <input type="number" id="num1">
+            <input type="number" id="num2">
+
+        <br>
+
+            <input type="button" value="Addition(+)" id="cong">
+            <input type="button" value="Subtraction(-)" id="tru">
+            <input type="button" value="Multiplication(X)" id="nhan">
+            <input type="button" value="Division(/)" id="chia">
+            </form>
+    </form>
+
+    <p id="hienthi"></p>
+
+    <script>
+        let phepcong=document.getElementById("cong");
+        phepcong.addEventListener("click", function(){
+            let soThuNhat=document.getElementById("num1").value;
+            let soThuHai=document.getElementById("num2").value;
+            let so1=Number(soThuNhat);
+            let so2=Number(soThuHai);
+            let ketqua=so1+so2;
+            document.getElementById("hienthi").innerHTML = "Additon: " + ketqua;
+        })
+
+
+        let pheptru=document.getElementById("tru");
+            pheptru.addEventListener("click", function(){
+                let soThuNhat=document.getElementById("num1").value;
+                let soThuHai=document.getElementById("num2").value;
+                let so1=Number(soThuNhat);
+                let so2=Number(soThuHai);
+                let ketqua = so1-so2;
+                document.getElementById("hienthi").innerHTML = "Subtraction: " + ketqua;
+            })
+
+        let phepnhan=document.getElementById("nhan");
+            phepnhan=document.addEventListener("click", function(){
+                let soThuNhat=document.getElementById("num1").value;
+                let soThuHai=document.getElementById("num2").value;
+                let so1=Number(soThuNhat);
+                let so2=Number(soThuHai);
+                let ketqua = so1*so2;
+                document.getElementById("hienthi").innerHTML = "Multiplication: " + ketqua;
+            })
+
+        let phepchia=document.getElementById("chia")
+            phepchia=document.addEventListener("click", function(){
+                let soThuNhat=document.getElementById("num1").value;
+                let soThuHai=document.getElementById("num2").value;
+                let so1=Number(soThuNhat);
+                let so2=Number(soThuHai);
+                let ketqua = so1/so2;
+                document.getElementById("hienthi").innerHTML = "Division: " + ketqua;
+            })
+            
+    </script>
+
+
+</body>
+</html>
