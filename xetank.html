@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xe tank</title>
+    <style> table td{width:10% center};</style>
+</head>
+<body>
+
+    <div style="border: 1px solid green; height: 190px; width: 190px;
+                background-color: hotpink;">
+        <img id="tank" src="tank.png"
+                 style="width: 19px; height: 19px; position: absolute; top: 95px; left: 95px;">
+     </div>
+     
+</body>
+
+<table border="1">
+    <tr>
+        <td></td>
+        <td id="len"> <button onclick="up()"> UP </button></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td id="trai"><button onclick="left()">LEFT</button></td>
+        <td></td>
+        <td id="phai"><button onclick="right()">RIGHT</button></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td id="xuong"><button onclick="down()">DOWN</button></td>
+        <td></td>
+    </tr>
+
+</table>
+
+<script>
+   function up(){ let top = document.getElementById("tank").style["top"];
+            top = parseInt(top)
+            top = top - 19;
+            document.getElementById("tank").style["top"] = top + "px"
+   }
+
+   function down(){ let top = document.getElementById("tank").style["top"];
+                    top = parseInt(top);
+                    top = top +19;
+                    document.getElementById("tank").style["top"] = top +"px"
+
+   }
+
+   function left(){ traiPhai = document.getElementById("tank").style["left"]
+                        traiPhai = parseInt(traiPhai);
+                        traiPhai = traiPhai - 19;
+                        document.getElementById("tank").style["left"] = traiPhai + "px";
+
+   }
+
+   function right() { traiPhai = document.getElementById("tank").style["left"];
+                        traiPhai = parseInt(traiPhai);
+                        traiPhai = traiPhai + 19;
+                        document.getElementById("tank").style["left"] = traiPhai + "px";
+   }
+
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng máy tính đơn giản</title>
+</head>
+<body>
+
+
+    <form>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+     <br>
+        <button type="button" id="cong" onclick="tinhCong()">Addition (+) </button> 
+        <button type="button" id="tru" onclick="tinhTru()">Subtraction (-)</button>
+        <button type="button" id="nhan" onclick="tinhNhan()">Multiplication (X)</button>
+        <button type="button" id="chia" onclick="tinhChia()">Division (/)</button>
+    </form>
+
+    <p id="hienthi"> Result </p>
+
+    <script>
+        function tinhCong(){let giatri1=document.getElementById("num1").value;
+                        let giatri2=document.getElementById("num2").value;
+                        let so1=Number(giatri1);
+                        let so2=Number(giatri2)
+                        ketqua = so1+so2;
+                        document.getElementById("hienthi").innerHTML = " Result Addition: " + ketqua}
+
+        function tinhTru(){let giatri1=document.getElementById("num1").value;
+                        let giatri2=document.getElementById("num2").value;
+                        let so1=Number(giatri1);
+                        let so2=Number(giatri2)
+                        ketqua = so1-so2;
+                        document.getElementById("hienthi").innerHTML = " Result Subtraction: " + ketqua}
+
+        function tinhNhan(){let giatri1=document.getElementById("num1").value;
+                        let giatri2=document.getElementById("num2").value;
+                        let so1=Number(giatri1);
+                        let so2=Number(giatri2)
+                        ketqua = so1*so2;
+                        document.getElementById("hienthi").innerHTML = " Result Multiplication: " + ketqua}
+                        
+        function tinhChia(){let giatri1=document.getElementById("num1").value;
+                        let giatri2=document.getElementById("num2").value;
+                        let so1=Number(giatri1);
+                        let so2=Number(giatri2)
+                        ketqua = so1/so2;
+                        document.getElementById("hienthi").innerHTML = " Result Division: " + ketqua}                
+    </script>
+    
+    
+</body>
+</html>

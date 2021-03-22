@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title> demo calculator </title>
+
+</head>
+
+<body>
+
+    <table style="text-align: center;">
+
+        <tr>
+            <td colspan=" 4"><input type="number" id="hienThi"></td>
+        </tr>
+            <td> <input type="button" value="%">
+            <td><input type="button" value="(">
+            <td><input type="button" value=")">
+            <td><input type="button" value="AC">
+        <tr>
+            
+        </tr>
+        <tr>
+            <td><input type="button" value="7" id="7" onclick="input7()">
+            <td><input type="button" value="8" onclick="input8()">
+            <td><input type="button" value="9" onclick="input9()">
+            <td><input type="button" value="/">
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="input4()">
+            <td><input type="button" value="5" onclick="input5()">
+            <td><input type="button" value="6" onclick="input6()">
+            <td><input type="button" value="*">
+
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="input1()">
+            <td><input type="button" value="2" onclick="input2()">
+            <td><input type="button" value="3" onclick="input3()">
+            <td><input type="button" value="-" onclick="tinhTru()">
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="0" onclick="input0()">
+            <td><input type="button" value=".">
+
+            
+        </tr>
+        <tr>
+            <td><input type="button" value="del">
+            <td colspan="2"><input type="button" value="=" onclick="thucHien()">    
+            <td><input type="button" value="+" onclick="tinhCong()">
+        </tr>
+    </table>
+    
+
+    <script> 
+        function input1(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"1"
+        }
+        function input2(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"2"
+        }
+        function input3(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"3"
+        }
+        function input4(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"4"
+        }
+        function input5(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"5"
+        }
+        function input6(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"6"
+        }
+        function input7(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"7"
+        }
+        function input8(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"8"
+        }
+        function input9(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"9"
+        }
+        function input0(){
+            document.getElementById("hienThi").value = document.getElementById("hienThi").value +"0"
+        }
+            var a
+            var tinh
+
+        function tinhCong(){
+             a=document.getElementById("hienThi").value
+                document.getElementById("hienThi").value=""
+            //console.log(a)
+        }
+
+        function tinhTru(){
+        }
+
+        function thucHien(){ 
+        }
+
+     
+        
+    </script>
+</body>
+</html>
